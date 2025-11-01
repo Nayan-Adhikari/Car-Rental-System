@@ -103,7 +103,7 @@ public class CarRentalSystem extends JFrame {
         }
     }
 
-    static class CarRentalSystem {
+    static class carRe {
         private List<Car> cars = new ArrayList<>();
         private List<Customer> customers = new ArrayList<>();
         private List<Rental> rentals = new ArrayList<>();
@@ -171,11 +171,11 @@ public class CarRentalSystem extends JFrame {
 
     // GUI Classes
     static class LoginFrame extends JFrame {
-        private CarRentalSystem system;
+        private carRe system;
         private JTextField usernameField;
         private JPasswordField passwordField;
 
-        public LoginFrame(CarRentalSystem system) {
+        public LoginFrame(carRe system) {
             this.system = system;
             setupUI();
         }
@@ -254,9 +254,9 @@ public class CarRentalSystem extends JFrame {
     }
 
     static class MainMenuFrame extends JFrame {
-        private CarRentalSystem system;
+        private carRe system;
         
-        public MainMenuFrame(CarRentalSystem system) {
+        public MainMenuFrame(carRe system) {
             this.system = system;
             setupUI();
         }
@@ -349,12 +349,12 @@ public class CarRentalSystem extends JFrame {
     }
 
     static class RentalForm extends JFrame {
-        private CarRentalSystem system;
+        private carRe system;
         private JComboBox<Car> carCombo;
         private JComboBox<Customer> customerCombo;
         private JSpinner daysSpinner;
 
-        public RentalForm(CarRentalSystem system) {
+        public RentalForm(carRe system) {
             this.system = system;
             setupUI();
         }
@@ -477,10 +477,10 @@ public class CarRentalSystem extends JFrame {
         }
     }
     static class ReturnForm extends JFrame {
-        private CarRentalSystem system;
+        private carRe system;
         private JComboBox<Rental> rentalCombo;
 
-        public ReturnForm(CarRentalSystem system) {
+        public ReturnForm(carRe system) {
             this.system = system;
             setupUI();
         }
@@ -579,11 +579,11 @@ public class CarRentalSystem extends JFrame {
     }
 
     static class CarManagementFrame extends JFrame {
-        private CarRentalSystem system;
+        private carRe system;
         private JList<Car> carList;
         private DefaultListModel<Car> listModel;
 
-        public CarManagementFrame(CarRentalSystem system) {
+        public CarManagementFrame(carRe system) {
             this.system = system;
             setupUI();
         }
@@ -716,11 +716,11 @@ public class CarRentalSystem extends JFrame {
     }
 
     static class CustomerManagementFrame extends JFrame {
-        private CarRentalSystem system;
+        private carRe system;
         private JList<Customer> customerList;
         private DefaultListModel<Customer> listModel;
 
-        public CustomerManagementFrame(CarRentalSystem system) {
+        public CustomerManagementFrame(carRe system) {
             this.system = system;
             setupUI();
         }
@@ -853,7 +853,7 @@ public class CarRentalSystem extends JFrame {
         }
         
         // Create and initialize the car rental system
-        CarRentalSystem system = new CarRentalSystem();
+        carRe system = new carRe();
         system.initializeSampleData();
         
         // Create and show the login frame
